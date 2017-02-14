@@ -1,0 +1,62 @@
+ html, body {
+    margin: 0;
+    padding: 0;
+    color: #222;
+    background: #eee;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+	display: inline-block;
+	margin: 0;
+	padding: 0.4em 0.8em;
+	background: #ccc;
+	font-weight: normal;
+}
+
+.notes {
+	margin: 16px 0;
+	font-size: 90%;
+}
+
+#box {
+    width: 800px;
+    margin: 64px auto;
+}
+
+#controls {
+	width: 810px;
+	height: 48px;
+	overflow: hidden;
+	background: #ccc;
+}
+
+#controls .fieldwrap {
+	display: inline-block;
+	float: left;
+	line-height: 44px;
+}
+
+#controls .fieldwrap {
+	margin-left: 16px;
+}
+
+#controls input:hover,
+#controls label:hover {
+    cursor: pointer;
+}
+
+#controls select {
+    margin-left: 4px;
+}
+
+input[type=checkbox] {
+    position: relative;
+    top: 1px;
+}
+
+#gl-canvas {
+    display: block;
+    border: solid 5px #ccc;
+}

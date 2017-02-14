@@ -1,0 +1,11 @@
+1) Canvas-Element initialisieren und WebGL-Kontext abfragen
+2) Initialisierung von WebGL (grundlegende Einstellungen)
+3) Initialisierung der Shader
+	3.1) Fragment Shader
+	3.2) Vertex Shader
+4) Initialisierung der Buffer
+	4.1) Vertices
+	4.2) Farben
+	4.3) Seiten (Faces)
+5) Optional: Animation, d.h. kleine Transformationsschritte
+5) Rendern, d.h. Rasterisierung der 3D-Daten

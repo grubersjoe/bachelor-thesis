@@ -1,0 +1,199 @@
+% Document class (KOMA Script)
+\documentclass[
+	a4paper, 10pt,
+	DIV=9, BCOR=5mm,
+	parskip,
+	numbers=noenddot,
+	listof=totoc,
+	bibliography=totoc,
+]{scrreprt}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage[T1]{fontenc}
+\usepackage[onehalfspacing]{setspace} % 1.5 line spacing
+\AfterTOCHead{\singlespacing}
+
+\pdfobjcompresslevel=0
+
+% "Fix" for KOMA script warning about floats
+\usepackage{scrhack}
+
+% Fonts (Palatino and Inconsolata)
+% \usepackage{libertine}
+\usepackage[sc]{mathpazo}
+% \linespread{1.05} % Recommendation for this font
+\usepackage[T1]{fontenc}
+\usepackage{inconsolata}
+
+% Setting serif-font for headings
+% (sans-serif by default)
+\addtokomafont{chapter}{\rmfamily}
+\addtokomafont{section}{\rmfamily}
+\addtokomafont{subsection}{\rmfamily}
+\addtokomafont{disposition}{\rmfamily}
+
+% Prevent orphans and widows
+\usepackage[all]{nowidow}
+
+% Footnotes in tables
+\usepackage{tablefootnote}
+
+% Continuous footnote numbers
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
+
+% Blockquotes
+\usepackage{etoolbox}
+\patchcmd{\quote}{\rightmargin}{\leftmargin 4em \rightmargin}{}{}
+\newenvironment{itquote}{\bigskip\begin{quote}\itshape}{\end{quote}\bigskip}
+
+% Enumerations
+\usepackage{enumitem}
+
+% Figures
+\usepackage{graphicx}
+\usepackage{subfig}
+
+% Trees
+% \usepackage{qtree}
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
+% Availability circles
+\definecolor{x3domc}{RGB}{0,83,180}
+\definecolor{webglc}{RGB}{153,0,0}
+\newcommand{\xpie}[1]{%
+	\begin{tikzpicture}
+		\draw[x3domc] (0,0) circle (0.6ex);\fill[rotate=90,fill=x3domc] (0.6ex,0) arc (0:-#1*90:0.6ex) -- (0,0) -- cycle;
+	\end{tikzpicture}%
+}
+\newcommand{\wpie}[1]{%
+	\begin{tikzpicture}
+		\draw[webglc] (0,0) circle (0.6ex);\fill[rotate=90,fill=webglc] (0.6ex,0) arc (0:-#1*360:0.6ex) -- (0,0) -- cycle;
+	\end{tikzpicture}%
+}
+
+% Tables
+\usepackage{booktabs}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\renewcommand{\arraystretch}{1.3}
+
+% Captions
+\usepackage[font=small]{caption}
+% Overwriting caption labels
+\addto\captionsngerman{
+	\renewcommand{\figurename}{Abb.}
+	\renewcommand{\tablename}{Tab.}
+}
+
+% Code listings
+\usepackage[outputdir=build]{minted}
+\setlength\partopsep{-\topsep}
+\newminted{html}{linenos, fontsize=\footnotesize, tabsize=4, baselinestretch=1}
+\newminted{js}{linenos, fontsize=\footnotesize, tabsize=4, baselinestretch=1}
+\newmintedfile[htmlinput]{html}{linenos, fontsize=\footnotesize, tabsize=4, baselinestretch=1}
+\newmintedfile[jsinput]{javascript}{linenos, fontsize=\footnotesize, tabsize=4, baselinestretch=1}
+\newmintedfile[jsginput]{javascript}{linenos, fontsize=\footnotesize, tabsize=4, baselinestretch=1,gobble=4}
+\newmintedfile[jsgginput]{javascript}{linenos, fontsize=\footnotesize, tabsize=4, baselinestretch=1,gobble=8}
+\renewcommand{\theFancyVerbLine}{\scriptsize{\arabic{FancyVerbLine}}}
+\renewcommand\listoflistingscaption{Quelltext-Listings}
+
+% TOC
+\usepackage{tocstyle}
+\usetocstyle{allwithdot}
+% Solve overfull hbox problem
+\makeatletter
+\renewcommand{\@pnumwidth}{2em}
+\renewcommand{\@tocrmarg}{3em}
+\makeatother
+
+% Write the word "Appendix" in front of every appendix entry
+\providecommand*{\appendixmore}{}
+\newcommand*{\SavedOriginaladdchaptertocentry}{}
+\appto\appendixmore{%
+	\let\SavedOriginaladdchaptertocentry\addchaptertocentry
+	\renewcommand*{\addchaptertocentry}[2]{%
+		\ifstr{#1}{}{%
+			\SavedOriginaladdchaptertocentry{}{#2}%
+		}{
+			\SavedOriginaladdchaptertocentry{}{\appendixname~#1:\enskip#2}%
+		}%
+	}%
+}
+
+% Links in TOC
+\usepackage[plainpages=false,hidelinks]{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% BibLaTex (Literature)
+\usepackage[backend=biber,sortlocale=de_DE,defernumbers=true]{biblatex}
+\addbibresource{literatur.bib}
+\renewcommand{\bibfont}{\normalfont\small}
+\DefineBibliographyStrings{ngerman}{
+	andothers = {et\addabbrvspace al\adddot},
+}
+
+\title{Darstellung interaktiver 3D-Grafik im Webbrowser}
+\author{Jonathan Gruber}
+\date{\today}
+
+\begin{document}
+	% Numbering is invisible, but required for hyperref package
+	\pagenumbering{Roman}
+
+	\input{meta.tex}
+	\input{titel.tex}
+
+	% TOC
+	\setcounter{tocdepth}{2}
+	\tableofcontents
+
+	% Remove page numbering in multipage toc
+	\thispagestyle{empty}
+	\addtocontents{toc}{\protect\thispagestyle{empty}}
+
+	\clearpage
+	\pagenumbering{arabic}
+
+	\input{kap0/einleitung.tex}
+	\input{kap1/motivation.tex}
+	\input{kap2/grundlagen.tex}
+	\input{kap3/ziele_anforderungen.tex}
+	\input{kap4/technologien.tex}
+	\input{kap5/evaluation.tex}
+	\input{kap6/schluss.tex}
+
+	\newpage
+	\pagenumbering{Roman}
+
+
+	\begingroup
+	\raggedright
+	\sloppy
+	\addchap{Quellenverzeichnis}
+	\printbibliography[title={Literatur}, nottype=online, notkeyword=software, heading=subbibliography]
+	\printbibliography[title={Online-Quellen},type=online,notkeyword=software, heading=subbibliography]
+	\printbibliography[title={Software},keyword=software, heading=subbibliography]
+	\endgroup
+
+
+	\listoffigures
+	\begingroup
+	\let\clearpage\relax
+	\listoftables
+	\endgroup
+
+	\input{erklaerung.tex}
+
+	\begin{appendix}
+		\input{anhang.tex}
+	\end{appendix}
+\end{document}

@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>X3D-Beispiel: Rotierende Pyramide</title>
+    <link rel='stylesheet' type='text/css' href='../../lib/x3dom/x3dom.css' />
+    <link rel='stylesheet' type='text/css' href='frame.css' />
+    <title>X3D-Frame</title>
+</head>
+<body>
+    <x3d id='x3d-node'>
+        <Scene>
+            <Viewpoint position='2 6 16' orientation="1 0 0 -0.4"></Viewpoint>
+            <DirectionalLight color='1,1,1' direction='2,0,-2' intensity='0.6' shadowIntensity='0.8'></DirectionalLight>
+            <NavigationInfo type='examine'></NavigationInfo>
+
+            <Transform DEF='master-transform' id='master-transform'>
+                <!-- Shapes will spawn here -->
+            </Transform>
+
+        </Scene>
+    </x3d>
+
+    <script src='../../lib/x3dom/x3dom.debug.js'></script>
+    <script src="../../lib/jquery.min.js"></script>
+
+    <script src='frame.js'></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+_minted*/
+build/*.xml
+*.aux
+*.bbl
+*.bcf
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.snm
+*.toc
+

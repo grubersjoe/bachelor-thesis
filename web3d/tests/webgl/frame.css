@@ -1,0 +1,54 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #444;
+}
+
+
+#controls {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+}
+
+#stats {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+#stats-plugin {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+button {
+    display: inline-block;
+}
+
+button + button {
+    margin-left: 8px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+canvas:hover {
+    cursor: -webkit-grab;
+    cursor:grab;
+}

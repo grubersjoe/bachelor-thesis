@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8' />
+		<title>WebGL-Beispiel: Rotierende Pyramide</title>
+		<link rel='stylesheet' href='../../examples-base/examples.css' />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id='box'>
+			<h1>WebGL-Beispiel</h1>
+
+			<canvas id='gl-canvas' width='800' height='600'>
+				Das HTML5 <code>&lt;canvas&gt;</code>-Element wird
+				von Ihrem Browser leider nicht unterstützt.
+			</canvas>
+
+			<div id='controls'>
+				<div class='fieldwrap'>
+					<input type='checkbox' data-property='wireframe' checked='checked' />
+					<label>Drahtgittermodell</label>
+				</div>
+				<div class='fieldwrap'>
+					<input type='checkbox' data-property='animation' checked='checked' />
+					<label>Animation</label>
+				</div>
+				<div class='fieldwrap'>
+					<label>Projektion:</label>
+					<select data-property='perspective'>
+						<option>Perspektivisch</option>
+						<option>Orthogonal</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<script id='shader-fs' type='x-shader/x-fragment'>
+			precision mediump float;
+			varying vec4 vColor;
+
+			void main(void) {
+				gl_FragColor = vColor;
+			}
+		</script>
+
+		<script id='shader-vs' type='x-shader/x-vertex'>
+			uniform mat4 uMVPMatrix;
+
+			attribute vec4 aPosition;
+			attribute vec4 aColor;
+
+			varying vec4 vColor;
+
+			void main(void) {
+				gl_Position = uMVPMatrix * aPosition;
+				vColor = aColor;
+			}
+		</script>
+
+		<script src='lib/gl-matrix/dist/gl-matrix.js'></script>
+		<script src='../../examples-base/base.js'></script>
+		<script src='main.js'></script>
+	</body>
+</html>

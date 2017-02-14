@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Web3D-Testumgebung</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel='stylesheet' href='lib/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='lib/bootstrap/css/bootstrap-theme.min.css'>
+    <link rel='stylesheet' type='text/css' href='css/main.css' />
+
+</head>
+<body class='frame-loading'>
+
+    <!-- <div id='spinner'>
+        <img src='res/loading.gif' alt='Lade...' />
+    </div> -->
+
+    <div class='page-container'>
+
+        <div class='navbar navbar-inverse navbar-fixed-top' id='topbar' role='navigation'>
+            <div class='navbar-header'>
+                <h1>Web3D-Testumgebung</h1>
+            </div>
+
+            <div class='navbar-center'>
+                <div id='scene-stats'></div>
+
+                <!--<div id='model-count'>-->
+                    <!--<span>0</span> Modelle-->
+                <!--</div>-->
+                <!--<div id='vertices-count'>-->
+                    <!--<span>0</span> Modelle-->
+                <!--</div>-->
+            </div>
+
+            <div class='navbar-right'>
+                <div id='fps'>
+                    <span>-</span> FPS
+                </div>
+                <canvas id='fps-chart' width='200' height='68'></canvas>
+            </div>
+        </div>
+
+        <div class='row '>
+            <aside id='sidebar' role='navigation'>
+                <h2>Verfügbare Tests</h2>
+                <ul class='nav nav-tabs' role='tablist'>
+                     <li id='tab-x3dom' class='active'><a href='#testcases-x3dom' role='tab' data-toggle='tab'>X3DOM</a></li>
+                     <li id='tab-webgl'><a href='#testcases-webgl' role='tab' data-toggle='tab'>WebGL</a></li>
+                </ul>
+
+                <div class='tab-content'>
+                    <div class='tab-pane active' id='testcases-x3dom'>
+                        <div class='list-group testcases' data-path='x3dom'>
+                            <!-- Filled by JSON data -->
+                        </div>
+                    </div>
+                    <div class='tab-pane' id='testcases-webgl'>
+                        <div class='list-group testcases' data-path='webgl'>
+                            <!-- Filled by JSON data -->
+                        </div>
+                    </div>
+                </div>
+
+                <button type='button' class='btn btn-success' id='btn-run-tests' title='Tests starten' disabled='disabled'>
+                    Auswahl ausführen
+                </button>
+                <button type='button' class='btn btn-danger' id='btn-abort-tests' title='Alle Tests abbrechen' disabled='disabled'>
+                    Abbrechen
+                </button>
+
+                <div id='download'>
+                    <label for='return-file'>Ergebnisse in Datei ausgeben?</label>
+                    <input type='checkbox' id='return-file' />
+                </div>
+            </aside>
+
+            <main>
+                <div id="error"></div>
+                <iframe id='frame' class=''></iframe>
+            </main>
+
+            <button id='toggle-fullscreen'>Vollbild</button>
+            <div id='backend-name'>
+                3D-Backend: <span>Lade...</span>
+            </div>
+        </div>
+
+        <footer id='status-bar'></footer>
+    </div>
+
+    <!-- JS libraries -->
+    <script src='lib/jquery.min.js'></script>
+    <script src='lib/bootstrap/js/bootstrap.min.js'></script>
+
+    <!-- Application code -->
+    <script src='js/UserInterface.js'></script>
+    <script src='js/TestInterface.js'></script>
+    <script src='js/Persistence.js'></script>
+    <script src='js/Stats.js'></script>
+    <script src='js/FPSMeter.js'></script>
+    <script src='js/App.js'></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="156mm" height="90mm" viewBox="0 0 15600 9000" version="1.1" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" stroke-width="28.222" stroke-linejoin="round" xml:space="preserve">
+ <path fill="rgb(255,255,255)" stroke="none" d="M 7806,9006 L 15,9006 15,0 15596,0 15596,9006 7806,9006 Z"/>
+ <path fill="rgb(0,107,107)" stroke="none" d="M 3577,907 C 3244,907 2913,960 2596,1063 2280,1166 1981,1318 1712,1514 1442,1709 1205,1946 1010,2216 814,2485 662,2783 559,3100 456,3417 404,3748 404,4081 404,4414 456,4744 559,5060 657,5362 800,5648 983,5907 L 2280,4993 C 2188,4864 2117,4721 2068,4570 2016,4413 1990,4247 1990,4081 1990,3914 2016,3749 2068,3590 2119,3432 2195,3283 2293,3148 2391,3013 2510,2895 2644,2797 2779,2699 2928,2623 3087,2572 3245,2520 3410,2494 3577,2494 L 3577,907 Z"/>
+ <path fill="rgb(184,71,0)" stroke="none" d="M 1574,7058 C 1583,7070 1592,7083 1601,7095 1796,7365 2033,7602 2303,7797 2572,7993 2871,8145 3187,8248 3504,8351 3835,8403 4168,8403 4501,8403 4832,8351 5148,8248 5465,8145 5764,7993 6033,7797 6070,7771 6106,7743 6141,7715 L 5154,6473 C 5137,6487 5119,6500 5100,6514 4966,6612 4817,6688 4658,6739 4500,6791 4334,6817 4168,6817 4001,6817 3836,6791 3678,6739 3519,6688 3370,6612 3235,6514 3101,6416 2982,6297 2884,6163 2880,6157 2875,6150 2871,6144 L 1574,7058 Z"/>
+ <path fill="rgb(174,207,0)" stroke="none" d="M 6889,7405 C 7115,7226 7314,7018 7483,6785 7635,6577 7761,6350 7857,6111 L 6387,5515 C 6339,5635 6276,5748 6200,5853 6115,5969 6015,6073 5903,6163 L 6889,7405 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 8006,5755 C 8034,5686 8059,5616 8082,5545 8185,5228 8238,4897 8238,4564 8238,4477 8234,4389 8227,4301 L 6646,4433 C 6650,4477 6652,4520 6652,4564 6652,4731 6626,4896 6574,5054 6563,5090 6550,5125 6536,5159 L 8006,5755 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 8202,3954 C 8182,3710 8133,3470 8058,3238 7997,3051 7919,2870 7825,2698 L 6434,3458 C 6481,3544 6519,3635 6550,3728 6588,3844 6612,3964 6622,4086 L 8202,3954 Z"/>
+ <path fill="rgb(51,163,163)" stroke="none" d="M 7678,2421 C 7613,2302 7540,2186 7460,2076 7303,1860 7119,1664 6913,1494 L 5903,2718 C 6006,2803 6098,2900 6176,3008 6216,3064 6253,3121 6286,3181 L 7678,2421 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 6743,1340 C 6581,1206 6405,1089 6220,989 L 5471,2388 C 5564,2438 5652,2497 5733,2564 L 6743,1340 Z"/>
+ <path fill="rgb(174,207,0)" stroke="none" d="M 6084,916 C 5908,822 5722,744 5531,685 L 5059,2199 C 5155,2229 5248,2268 5336,2315 L 6084,916 Z"/>
+ <path fill="rgb(75,31,111)" stroke="none" d="M 5399,642 C 5235,591 5068,554 4898,530 L 4676,2101 C 4761,2113 4845,2132 4927,2157 L 5399,642 Z"/>
+ <path fill="rgb(35,184,220)" stroke="none" d="M 4779,513 C 4633,492 4485,481 4337,481 L 4337,2068 C 4411,2068 4485,2073 4558,2084 L 4779,513 Z"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1001" y="3131"><tspan fill="rgb(255,255,255)" stroke="none">34,8%</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="3366" y="7733"><tspan fill="rgb(255,255,255)" stroke="none">25,9%</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="6451" y="6493"><tspan fill="rgb(255,255,255)" stroke="none">8,2%</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7047" y="5068"><tspan fill="rgb(255,255,255)" stroke="none">7,4%</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="6949" y="3680"><tspan fill="rgb(255,255,255)" stroke="none">6,6%</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="6357" y="2572"><tspan fill="rgb(255,255,255)" stroke="none">6,1%</tspan></tspan></tspan></text>
+ <path fill="rgb(0,107,107)" stroke="none" d="M 9545,1334 L 9439,1334 9439,1123 9650,1123 9650,1334 9545,1334 Z"/>
+ <path fill="rgb(184,71,0)" stroke="none" d="M 9545,1913 L 9439,1913 9439,1702 9650,1702 9650,1913 9545,1913 Z"/>
+ <path fill="rgb(174,207,0)" stroke="none" d="M 9545,2492 L 9439,2492 9439,2281 9650,2281 9650,2492 9545,2492 Z"/>
+ <path fill="rgb(87,157,28)" stroke="none" d="M 9545,3071 L 9439,3071 9439,2860 9650,2860 9650,3071 9545,3071 Z"/>
+ <path fill="rgb(126,0,33)" stroke="none" d="M 9545,3650 L 9439,3650 9439,3439 9650,3439 9650,3650 9545,3650 Z"/>
+ <path fill="rgb(51,163,163)" stroke="none" d="M 9545,4229 L 9439,4229 9439,4018 9650,4018 9650,4229 9545,4229 Z"/>
+ <path fill="rgb(49,64,4)" stroke="none" d="M 9545,4807 L 9439,4807 9439,4596 9650,4596 9650,4807 9545,4807 Z"/>
+ <path fill="rgb(174,207,0)" stroke="none" d="M 9545,5386 L 9439,5386 9439,5175 9650,5175 9650,5386 9545,5386 Z"/>
+ <path fill="rgb(75,31,111)" stroke="none" d="M 9545,5965 L 9439,5965 9439,5754 9650,5754 9650,5965 9545,5965 Z"/>
+ <path fill="rgb(35,184,220)" stroke="none" d="M 9545,6544 L 9439,6544 9439,6333 9650,6333 9650,6544 9545,6544 Z"/>
+ <path fill="rgb(197,0,11)" stroke="none" d="M 9545,7123 L 9439,7123 9439,6912 9650,6912 9650,7123 9545,7123 Z"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9750" y="1374"><tspan fill="rgb(0,0,0)" stroke="none">1920 x 1080 </tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9750" y="1953"><tspan fill="rgb(0,0,0)" stroke="none">1366 x 768</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9750" y="2532"><tspan fill="rgb(0,0,0)" stroke="none">1600 x 900</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9750" y="3111"><tspan fill="rgb(0,0,0)" stroke="none">1280 x 1024</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9750" y="3690"><tspan fill="rgb(0,0,0)" stroke="none">1680 x 1050</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9750" y="4269"><tspan fill="rgb(0,0,0)" stroke="none">1440 x 900</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9750" y="4847"><tspan fill="rgb(0,0,0)" stroke="none">1360 x 768</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9750" y="5426"><tspan fill="rgb(0,0,0)" stroke="none">1024 x 768</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9750" y="6005"><tspan fill="rgb(0,0,0)" stroke="none">1280 x 800</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9750" y="6584"><tspan fill="rgb(0,0,0)" stroke="none">1920 x 1200 </tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Palatino" font-size="353px" font-weight="400"><tspan class="TextPosition" x="9750" y="7163"><tspan fill="rgb(0,0,0)" stroke="none">Andere</tspan></tspan></tspan></text>
+</svg>

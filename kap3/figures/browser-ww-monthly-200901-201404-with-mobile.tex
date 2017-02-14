@@ -1,0 +1,128 @@
+% GNUPLOT: LaTeX picture with Postscript
+\begingroup
+  \makeatletter
+  \providecommand\color[2][]{%
+    \GenericError{(gnuplot) \space\space\space\@spaces}{%
+      Package color not loaded in conjunction with
+      terminal option `colourtext'%
+    }{See the gnuplot documentation for explanation.%
+    }{Either use 'blacktext' in gnuplot or load the package
+      color.sty in LaTeX.}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\includegraphics[2][]{%
+    \GenericError{(gnuplot) \space\space\space\@spaces}{%
+      Package graphicx or graphics not loaded%
+    }{See the gnuplot documentation for explanation.%
+    }{The gnuplot epslatex terminal needs graphicx.sty or graphics.sty.}%
+    \renewcommand\includegraphics[2][]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \@ifundefined{ifGPcolor}{%
+    \newif\ifGPcolor
+    \GPcolortrue
+  }{}%
+  \@ifundefined{ifGPblacktext}{%
+    \newif\ifGPblacktext
+    \GPblacktexttrue
+  }{}%
+  % define a \g@addto@macro without @ in the name:
+  \let\gplgaddtomacro\g@addto@macro
+  % define empty templates for all commands taking text:
+  \gdef\gplbacktext{}%
+  \gdef\gplfronttext{}%
+  \makeatother
+  \ifGPblacktext
+    % no textcolor at all
+    \def\colorrgb#1{}%
+    \def\colorgray#1{}%
+  \else
+    % gray or color?
+    \ifGPcolor
+      \def\colorrgb#1{\color[rgb]{#1}}%
+      \def\colorgray#1{\color[gray]{#1}}%
+      \expandafter\def\csname LTw\endcsname{\color{white}}%
+      \expandafter\def\csname LTb\endcsname{\color{black}}%
+      \expandafter\def\csname LTa\endcsname{\color{black}}%
+      \expandafter\def\csname LT0\endcsname{\color[rgb]{1,0,0}}%
+      \expandafter\def\csname LT1\endcsname{\color[rgb]{0,1,0}}%
+      \expandafter\def\csname LT2\endcsname{\color[rgb]{0,0,1}}%
+      \expandafter\def\csname LT3\endcsname{\color[rgb]{1,0,1}}%
+      \expandafter\def\csname LT4\endcsname{\color[rgb]{0,1,1}}%
+      \expandafter\def\csname LT5\endcsname{\color[rgb]{1,1,0}}%
+      \expandafter\def\csname LT6\endcsname{\color[rgb]{0,0,0}}%
+      \expandafter\def\csname LT7\endcsname{\color[rgb]{1,0.3,0}}%
+      \expandafter\def\csname LT8\endcsname{\color[rgb]{0.5,0.5,0.5}}%
+    \else
+      % gray
+      \def\colorrgb#1{\color{black}}%
+      \def\colorgray#1{\color[gray]{#1}}%
+      \expandafter\def\csname LTw\endcsname{\color{white}}%
+      \expandafter\def\csname LTb\endcsname{\color{black}}%
+      \expandafter\def\csname LTa\endcsname{\color{black}}%
+      \expandafter\def\csname LT0\endcsname{\color{black}}%
+      \expandafter\def\csname LT1\endcsname{\color{black}}%
+      \expandafter\def\csname LT2\endcsname{\color{black}}%
+      \expandafter\def\csname LT3\endcsname{\color{black}}%
+      \expandafter\def\csname LT4\endcsname{\color{black}}%
+      \expandafter\def\csname LT5\endcsname{\color{black}}%
+      \expandafter\def\csname LT6\endcsname{\color{black}}%
+      \expandafter\def\csname LT7\endcsname{\color{black}}%
+      \expandafter\def\csname LT8\endcsname{\color{black}}%
+    \fi
+  \fi
+  \setlength{\unitlength}{0.0500bp}%
+  \begin{picture}(7200.00,4320.00)%
+    \gplgaddtomacro\gplbacktext{%
+      \csname LTb\endcsname%
+      \put(595,636){\makebox(0,0)[r]{\strut{} 0}}%
+      \csname LTb\endcsname%
+      \put(595,1137){\makebox(0,0)[r]{\strut{} 10}}%
+      \csname LTb\endcsname%
+      \put(595,1638){\makebox(0,0)[r]{\strut{} 20}}%
+      \csname LTb\endcsname%
+      \put(595,2139){\makebox(0,0)[r]{\strut{} 30}}%
+      \csname LTb\endcsname%
+      \put(595,2640){\makebox(0,0)[r]{\strut{} 40}}%
+      \csname LTb\endcsname%
+      \put(595,3141){\makebox(0,0)[r]{\strut{} 50}}%
+      \csname LTb\endcsname%
+      \put(595,3642){\makebox(0,0)[r]{\strut{} 60}}%
+      \csname LTb\endcsname%
+      \put(595,4143){\makebox(0,0)[r]{\strut{} 70}}%
+      \csname LTb\endcsname%
+      \put(683,437){\makebox(0,0){\strut{}2009}}%
+      \csname LTb\endcsname%
+      \put(1875,437){\makebox(0,0){\strut{}2010}}%
+      \csname LTb\endcsname%
+      \put(3067,437){\makebox(0,0){\strut{}2011}}%
+      \csname LTb\endcsname%
+      \put(4258,437){\makebox(0,0){\strut{}2012}}%
+      \csname LTb\endcsname%
+      \put(5450,437){\makebox(0,0){\strut{}2013}}%
+      \csname LTb\endcsname%
+      \put(6642,437){\makebox(0,0){\strut{}2014}}%
+      \csname LTb\endcsname%
+      \put(143,2389){\rotatebox{-270}{\makebox(0,0){\strut{}Prozent}}}%
+      \csname LTb\endcsname%
+      \put(3809,139){\makebox(0,0){\strut{}Jahr}}%
+    }%
+    \gplgaddtomacro\gplfronttext{%
+      \csname LTb\endcsname%
+      \put(6240,3965){\scriptsize\sffamily\makebox(0,0)[r]{\strut{}Internet Explorer}}%
+      \csname LTb\endcsname%
+      \put(6240,3766){\scriptsize\sffamily\makebox(0,0)[r]{\strut{}Chrome}}%
+      \csname LTb\endcsname%
+      \put(6240,3567){\scriptsize\sffamily\makebox(0,0)[r]{\strut{}Firefox}}%
+      \csname LTb\endcsname%
+      \put(6240,3368){\scriptsize\sffamily\makebox(0,0)[r]{\strut{}Safari}}%
+      \csname LTb\endcsname%
+      \put(6240,3169){\scriptsize\sffamily\makebox(0,0)[r]{\strut{}Opera}}%
+      \csname LTb\endcsname%
+      \put(6240,2970){\scriptsize\sffamily\makebox(0,0)[r]{\strut{}Mobile Browser}}%
+    }%
+    \gplbacktext
+    \put(0,0){\includegraphics{kap3/figures/browser-ww-monthly-200901-201404-with-mobile}}%
+    \gplfronttext
+  \end{picture}%
+\endgroup

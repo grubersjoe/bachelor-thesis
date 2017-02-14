@@ -1,0 +1,111 @@
+{
+    "defaultTech": "webgl",
+    "x3dom": {
+        "browser_support": {
+            "func": "browserSupportTest",
+            "title": "Browserunterstützung",
+            "desc": "Prüft die Verfügbarkeit der verschiedenen X3DOM-Backends.",
+            "params": [
+                [null]
+            ]
+        },
+        "geometry_stress_test": {
+            "func": "geometryStressTest",
+            "title": "FPS-Stresstest",
+            "desc": "Fügt der Szene so lange Würfel hinzu, bis 25 FPS unterschritten werden.",
+            "params": [
+                ["box", 25, 5, 250]
+            ]
+        },
+        "res_fps_stress_test": {
+            "func": "resFpsStressTest",
+            "title": "FPS-Stresstest: Auflösungen",
+            "desc": "Fügt der Szene Würfel bei verschiedenen Auflösungen hinzu, bis 30 FPS unterschritten werden.",
+            "params": [
+                ["box", "1024x768", 25, 5, 250],
+                ["box", "1280x1024", 25, 5, 250],
+                ["box", "1376x768", 25, 5, 250],
+                ["box", "1600x900", 25, 5, 250],
+                ["box", "1920x1080", 25, 5, 250]
+            ]
+        },
+        "load_external_model": {
+            "func": "loadModelTest",
+            "title": "Laden von Modelldaten",
+            "desc": "Lädt ein extern erstelltes X3D-Modell.",
+            "params": [
+                ["teapot.norm.x3d", 100, "lambert", "flat"]
+            ]
+        },
+        "realism_test": {
+            "func": "realismTest",
+            "title": "Realismus-Test",
+            "desc": "Lädt ein texturiertes 3D-Modell und demonstriert Beleuchtung und Shading.",
+            "params": [
+                ["teapot_textured.x3d", 10]
+            ]
+        },
+        "picking_test": {
+            "func": "pickingTest",
+            "title": "Picking-Test",
+            "desc": "Demonstriert das Picking von Objekten.",
+            "params": [
+                [50, 2]
+            ]
+        }
+    },
+    "webgl": {
+        "browser_support": {
+            "func": "browserSupportTest",
+            "title": "Browserunterstützung",
+            "desc": "Testet die grundsätzliche Browser&shy;unterstützung für WebGL.",
+            "params": [
+                null
+            ]
+        },
+        "geometry_stress_test": {
+            "func": "geometryStressTest",
+            "title": "FPS-Stresstest",
+            "desc": "Fügt der Szene so lange Würfel hinzu, bis 30 FPS unterschritten werden.",
+            "params": [
+                ["box", 25, 5, 50]
+            ]
+        },
+        "res_fps_stress_test": {
+            "func": "resFpsStressTest",
+            "title": "FPS-Stresstest: Auflösungen",
+            "desc": "Fügt der Szene Würfel bei verschiedenen Auflösungen hinzu, bis 30 FPS unterschritten werden.",
+            "params": [
+                ["box", "1024x768", 25, 5, 50],
+                ["box", "1280x1024", 25, 5, 50],
+                ["box", "1376x768", 25, 5, 50],
+                ["box", "1600x900", 25, 5, 50],
+                ["box", "1920x1080", 25, 5, 50]
+            ]
+        },
+        "load_external_model": {
+            "func": "loadModelTest",
+            "title": "Laden von Modelldaten",
+            "desc": "Lädt ein extern erstelltes 3D-Modell, mittels eines Object-Files.",
+            "params": [
+                ["teapot.norm.obj", 100, "lambert", "flat"]
+            ]
+        },
+        "realism_test": {
+            "func": "realismTest",
+            "title": "Realismus-Test",
+            "desc": "Lädt ein texturiertes 3D-Modell und demonstriert Beleuchtung und Shading.",
+            "params": [
+                ["teapot.norm.obj", 100, "teapot_texture_tiled.jpg"]
+            ]
+        },
+        "picking_test": {
+            "func": "pickingTest",
+            "title": "Picking-Test",
+            "desc": "Demonstriert das Picking von Objekten.",
+            "params": [
+                [50, 3]
+            ]
+        }
+    }
+}

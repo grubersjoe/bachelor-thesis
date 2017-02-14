@@ -1,0 +1,25 @@
+[0] Config.pm:354> INFO - This is Biber 2.6
+[0] Config.pm:357> INFO - Logfile is 'build/main.blg'
+[44] biber:302> INFO - === Di Feb 14, 2017, 01:19:36
+[62] Biber.pm:359> INFO - Reading 'build/main.bcf'
+[174] Biber.pm:823> INFO - Found 57 citekeys in bib section 0
+[191] Biber.pm:3658> INFO - Processing section 0
+[207] Biber.pm:3828> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[211] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[216] bibtex.pm:1282> INFO - Found BibTeX data source 'literatur.bib'
+[226] Utils.pm:164> WARN - month field 'Aug' in entry 'Taivalsaari:2001:Saga_continues' is not an integer - this will probably not sort properly.
+[256] Utils.pm:164> WARN - month field 'Jan' in entry 'Taivalsaari:2011:Death_of_Binary_Software' is not an integer - this will probably not sort properly.
+[271] Utils.pm:164> WARN - ISBN '0-201-84840-6 - 978-0-201-84840-3' in entry 'Foley:CG_PRINCIPLES_AND_PRACTICE' is invalid - run biber with '--validate_datamodel' for details.
+[286] Utils.pm:164> WARN - month field 'Jan' in entry 'Ortiz:2010' is not an integer - this will probably not sort properly.
+[294] Utils.pm:164> WARN - month field 'Feb' in entry 'Paulson:2007' is not an integer - this will probably not sort properly.
+[296] Utils.pm:164> WARN - ISBN '978-1-449-32357-8 - 1-449-32357-X' in entry 'Parisi:2012' is invalid - run biber with '--validate_datamodel' for details.
+[307] Utils.pm:164> WARN - month field 'Nov' in entry 'Daly:2007' is not an integer - this will probably not sort properly.
+[309] Utils.pm:164> WARN - ISBN '012088500X, 9780080489889' in entry 'Brutzman:2007:XEG:1214715' is invalid - run biber with '--validate_datamodel' for details.
+[334] Utils.pm:164> WARN - ISBN '0321902920, 9780321902924' in entry 'Matsuda:2013' is invalid - run biber with '--validate_datamodel' for details.
+[416] UCollate.pm:68> INFO - Overriding locale 'de_DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[416] UCollate.pm:68> INFO - Overriding locale 'de_DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[416] Biber.pm:3487> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de_DE'
+[416] Biber.pm:3493> INFO - No sort tailoring available for locale 'de_DE'
+[480] bbl.pm:597> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[490] bbl.pm:701> INFO - Output to build/main.bbl
+[490] Biber.pm:109> INFO - WARNINGS: 9
