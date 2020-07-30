@@ -1,29 +1,26 @@
 # Darstellung interaktiver 3D-Grafik im Webbrowser
 
-Die Testumgebung liegt im Unterverzeichnis "web3d" des Hauptverzeichnisses
-(Darstellunger interaktiver 3D-Grafik im Webbrowser). Ein Webserver ist für
-die Ausführung der Umgebung zwingend notwendig. Eine einfache Möglichkeit
-bietet hierbei Python. Sofern dieses installiert ist kann unter Python 2 ein
-einfacher HTTP-Server im aktuellen Verzeichnis wie folgt gestartet werden:
+Bachelorarbeit Jonathan Gruber, 2014
+Technische Hochschule Ingolstadt
 
-```python
-python -m SimpleHTTPServer [port]
-```
+**[PDF](./build/main.pdf)**
 
-Für Python 3 lautet der Befehl:
+## Testumgebung
 
-```python
-python -m http.server [port]
-```
+Die Testumgebung liegt im Unterverzeichnis `web3d` des Wurzelverzeichnises. Zur
+Ausführung dieser ist ein Webserver erforderlich. Hierfür kann beispielsweise
+der in Python integrierte HTTP-Server verwendet werden:
 
-Die behandelten Beispiele für X3DOM bzw. WebGL liegen unter "kap4". Für deren
-Betrachtung muss in diesem Verzeichnis wie oben ebenso ein Webserer gestartet
-werden. Angenommen der Server läuft unter dem Standard-Port 8000, so können
-die Beispiele unter folgenden Adressen aufgerufen werden:
+```python python -m http.server [port] ```
+
+Für Python 2 lautet der Befehl:
+
+```python python2 -m SimpleHTTPServer [port] ```
+
+Die behandelten Beispiele für X3DOM bzw. WebGL liegen unter `kap4`. Für
+deren Betrachtung muss in diesem Verzeichnis wie oben ein Webserer gestartet
+werden. Angenommen der Server läuft unter dem Standard-Port 8000, so sind
+die Beispiele unter den folgenden Adressen aufrufbar:
 
 http://localhost:8000/x3dom/example/
 http://localhost:8000/webgl/example/
-
-Jonathan Gruber
-
-02.08.2014
